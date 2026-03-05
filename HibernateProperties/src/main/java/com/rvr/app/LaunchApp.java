@@ -13,13 +13,13 @@ public class LaunchApp {
 
         Configuration config = new Configuration();
 
-        config.setProperty("hibernate.connection.driver_class","com.mysql.cj.jdbc.Driver");
-        config.setProperty("hibernate.connection.url","jdbc:mysql://localhost:3306/hibernatedb");
-        config.setProperty("hibernate.connection.username","root");
-        config.setProperty("hibernate.connection.password","rvr@csd");
-        config.setProperty("hibernate.hbm2ddl.auto","update");
-        config.setProperty("hibernate.show_sql","true");
-        config.setProperty("hibernate.format_sql","true");
+//        config.setProperty("hibernate.connection.driver_class","com.mysql.cj.jdbc.Driver");
+//        config.setProperty("hibernate.connection.url","jdbc:mysql://localhost:3306/hibernatedb");
+//        config.setProperty("hibernate.connection.username","root");
+//        config.setProperty("hibernate.connection.password","rvr@csd");
+//        config.setProperty("hibernate.hbm2ddl.auto","update");
+//        config.setProperty("hibernate.show_sql","true");
+//        config.setProperty("hibernate.format_sql","true");
         config.addAnnotatedClass(Student.class);
         SessionFactory sessionFactory = config.buildSessionFactory();
         Session session = sessionFactory.openSession();
@@ -30,7 +30,7 @@ public class LaunchApp {
             transaction = session.beginTransaction();
 
             Student student = new Student();
-            student.setsid(8);
+//            student.setsid(8);
             student.setsname("kalyan");
             student.setscity("ongole");
 
