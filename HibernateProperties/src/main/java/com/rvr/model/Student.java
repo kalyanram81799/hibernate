@@ -2,6 +2,8 @@ package com.rvr.model;
 
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
+import jakarta.persistence.GeneratedValue;
+import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
 import jakarta.persistence.Table;
 
@@ -10,6 +12,7 @@ import jakarta.persistence.Table;
 @Table(name="Student_table")
 public class Student {
 @Id
+@GeneratedValue(strategy = GenerationType.IDENTITY)
 @Column(name="student_id")
 private int sid;
 @Column(name="Student_name")

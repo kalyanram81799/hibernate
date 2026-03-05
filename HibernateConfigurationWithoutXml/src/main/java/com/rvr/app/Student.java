@@ -17,7 +17,7 @@ public class Student {
         config.setProperty("hibernate.connection.url","jdbc:mysql://localhost:3306/hibernatedb");
         config.setProperty("hibernate.connection.username","root");
         config.setProperty("hibernate.connection.password","rvr@csd");
-        config.setProperty("hibernate.hbm2ddl.auto","update");
+        config.setProperty("hibernate.hbm2ddl.auto","create");
         config.setProperty("hibernate.show_sql","true");
         config.setProperty("hibernate.format_sql","true");
         config.addAnnotatedClass(Student1.class);
@@ -30,7 +30,7 @@ public class Student {
             transaction = session.beginTransaction();
 
             Student1 student = new Student1();
-            student.setsid(5);
+//            student.setsid(5);
             student.setsname("kalyan");
             student.setscity("ongole");
 
