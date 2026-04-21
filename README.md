@@ -74,5 +74,5 @@ Make sure:
 ---
 
 ## 👨‍💻 Author
-Kalyan Ram A
+Kalyan Ram Ayinabathina 
 Developed as part of Hibernate learning and backend development practice.
