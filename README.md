@@ -52,7 +52,7 @@ Make sure:
 3. Update database credentials
 4. Run the main class
 
----
+-
 
 ## 📖 What I Learned
 
